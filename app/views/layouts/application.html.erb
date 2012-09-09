@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Casen</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <!-- Start main content --> 
+  <span class="welcome" id="top"><!-- Anchor Link for Welcome Section --></span> 
+  <!-- Start Header -->
+  <div id="header">
+    <div class="inner">
+      <div class="logo"><img src="/assets/logo.png" width="112" height="172" alt="Header Logo" /></div>
+      <!-- End Logo --> 
+      
+      <!-- Main Navigation -->
+      <div id="navigation">
+            <ul class="main-menu">
+          <li><span><a href="#top">Welcome</a></span></li>
+          <li><span><a href="#about-me-link">About Me</a></span></li>
+          <!-- Class gap: For the gap between the logo and menu -->
+          <li class="gap"><span><a href="#my-work-link">My Work</a></span></li>
+          <li><span><a href="#method-link">Method</a></span></li>
+          <li><span><a href="#blog-link">Blog</a></span></li>
+          <li><span><a href="#contact-link">Get In Touch</a></span></li>
+        </ul>
+          </div>
+      <!-- End Navigation --> 
+    </div>
+    <!-- End Header Inner Div --> 
+  </div>
+
+  <%= yield %>
+
+
+  <div class="splitter-up"></div>
+  <!-- Start Footer -->
+  <div id="footer" class="clearfix">
+        <div class="inner">
+      <div class="footer-logo"><a href="#"><img src="/assets/footer-logo.png" alt="Footer Logo" width="200" height="75" /></a> </div>
+      <!-- End footer-logo -->
+      
+      <div class="footer-links">
+            <p><strong>Primento</strong> - Premium HTML Theme 2012<br />
+          Available Exclusively in <a href="#">Theme Forest</a></p>
+          </div>
+      <!-- End footer-links -->
+      
+      <div class="rss"> <a href="#">
+        <p>Stay up to date <br />
+          and subscribe</p>
+        </a> </div>
+      <!-- End rss --> 
+      
+    </div>
+        <!-- End inner --> 
+  </div>
+  <!-- End Footer Div -->
+
+</body>
+</html>
